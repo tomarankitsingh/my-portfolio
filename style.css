@@ -136,21 +136,21 @@ a:hover {
     transform: rotate(-45deg) translate(10px, -5px);
 }
 
-.hamburger-icon span:first-child{
+.hamburger-icon span:first-child {
     transform: none;
 }
 
-.hamburger-icon span:first-child{
+.hamburger-icon span:first-child {
     opacity: 1;
 }
 
-.hamburger-icon span:first-child{
+.hamburger-icon span:first-child {
     transform: none;
 }
 
 /* sections  */
 
-section{
+section {
     padding-top: 4vh;
     height: 96vh;
     margin: 0 10rem;
@@ -158,13 +158,13 @@ section{
     min-height: fit-content;
 }
 
-.section-container{
+.section-container {
     display: flex;
 }
 
 /* profile section  */
 
-#profile{
+#profile {
     display: flex;
     justify-content: center;
     gap: 5rem;
@@ -178,34 +178,34 @@ section{
     margin: auto 0;
 }
 
-.section_pic-container #pic{
+.section_pic-container #pic {
     border-radius: 50%;
 }
 
-.section_text{
+.section_text {
     align-self: center;
     text-align: center;
 }
 
-.section_text p{
+.section_text p {
     font-weight: 600;
 }
 
-.section_text_p1{
+.section_text_p1 {
     text-align: center;
 }
 
-.section_text_p2{
+.section_text_p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
 
-.title{
+.title {
     font-size: 3rem;
     text-align: center;
 }
 
-#socials-container{
+#socials-container {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
@@ -214,20 +214,25 @@ section{
 
 /* icons  */
 
-.icon{
+.icon {
     cursor: pointer;
     height: 2rem;
     /* margin-top: 0.5rem; */
 }
 
+.profile-icon {
+    margin-top: 1rem;
+    padding-right: 0.75rem;
+}
+
 /* buttons */
-.btn-container{
+.btn-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
-.btn{
+.btn {
     font-weight: 600;
     transition: all 300ms ease;
     padding: 1rem;
@@ -235,66 +240,70 @@ section{
     border-radius: 2rem;
 }
 
-.btn-color-1, .btn-color-2{
+.btn-color-1,
+.btn-color-2 {
     border: rgb(53, 53, 53) 0.1rem solid;
 }
 
-.btn-color-1:hover, .btn-color-2:hover{
+.btn-color-1:hover,
+.btn-color-2:hover {
     cursor: pointer;
 }
 
-.btn-color-1, .btn-color-2:hover{
+.btn-color-1,
+.btn-color-2:hover {
     background: rgb(53, 53, 53);
     color: white;
 }
 
-.btn-color-1:hover{
+.btn-color-1:hover {
     background: rgb(0, 0, 0);
 }
 
-.btn-color-2{
+.btn-color-2 {
     background: none;
 }
 
-.btn-color-2:hover{
+.btn-color-2:hover {
     border: rgb(255, 255, 255) 0.1rem solid;
 }
 
-.btn-container{
+.btn-container {
     gap: 1rem;
 }
 
 /* about section */
-#about{
+#about {
     position: relative;
 }
 
-.about-containers{
+.about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
-.about-details-container{
+.about-details-container {
     justify-content: center;
     flex-direction: column;
 }
 
-.about-containers, .about-details-container{
+.about-containers,
+.about-details-container {
     display: flex;
 }
 
-.about-pic{
+.about-pic {
     border-radius: 2rem;
 }
 
-.arrow{
+.arrow {
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
 }
 
-.details-container{
+.details-container {
     padding: 1.5rem;
     flex: 1;
     background: white;
@@ -304,12 +313,12 @@ section{
     text-align: center;
 }
 
-.section-container{
+.section-container {
     gap: 4rem;
     height: 80%;
 }
 
-.section_pic-container{
+.section_pic-container {
     height: 400px;
     width: 400px;
     margin: auto 0;
@@ -317,80 +326,117 @@ section{
 
 /* education section  */
 
-#education{
+#education {
     position: relative;
 }
 
-.education-sub-title{
+.education-sub-title {
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
 }
 
-.education-details-container{
+.education-details-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.article-container{
+/* .article-container{
     display: flex;
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
-    justify-content: space-around;   
+    justify-content: space-around;
+} */
+
+.article-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
+    text-align: initial;
+    gap: 2.5rem;
+    margin-left: 50px;
 }
 
-article{
+/* above container and this one are removable if we want display: flex  */
+.article-container:nth-child(3) {
+    grid-column: 1;
+}
+
+article {
     display: flex;
     width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
+    /* justify-content: space-around; */
+    gap: 1.5rem;
 }
 
-article .icon{
+article .icon {
     cursor: default;
+    margin-top: 0.5rem;
+}
+
+/* we have to create this seperately b/c above article-container is changed, remove if article changed  */
+.article-container-forprojectimg {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
 }
 
 /* project section  */
 
-#projects{
+#projects {
     position: relative;
 }
 
-.color-container{
+/* project-container and its parent both are added extra because we have only one project as of now, remove later when add more projects.  */
+.project-container-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container {
+    width: 33%;
+    height: auto;
+}
+
+.color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
 }
 
-.project-img{
+.project-img {
     border-radius: 2rem;
     width: 90%;
     height: 90%;
 }
 
-.project-title{
+.project-title {
     margin: 1rem;
     color: black;
 }
 
-.project-btn{
+.project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
 }
 
 /* contact  */
 
-#contact{
+#contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 70vh;
 }
 
-.contact-info-upper-container{
+.contact-info-upper-container {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
@@ -401,7 +447,7 @@ article .icon{
     padding: 0.5rem;
 }
 
-.contact-info-container{
+.contact-info-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -409,24 +455,24 @@ article .icon{
     margin: 1rem;
 }
 
-.contact-info-container p{
+.contact-info-container p {
     font-size: larger;
 }
 
-.contact-icon{
+.contact-icon {
     cursor: default;
 }
 
-.email-icon{
+.email-icon {
     height: 2.5rem;
 }
 
 /* footer  */
-footer{
+footer {
     height: 26vh;
     margin: 0 1rem;
 }
 
-footer p{
+footer p {
     text-align: center;
 }
