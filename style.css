@@ -1,3 +1,5 @@
+/* General  */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 * {
@@ -14,7 +16,7 @@ html {
 }
 
 p {
-    color: rgb(85, 85, 85)
+    color: rgb(85, 85, 85);
 }
 
 /* transition */
@@ -23,7 +25,7 @@ a,
     transition: all 300ms ease;
 }
 
-/* nav */
+/* desktop nav */
 nav,
 .nav-links {
     display: flex;
@@ -138,15 +140,15 @@ a:hover {
     transform: none;
 }
 
-.hamburger-icon span:nth-child(2){
+.hamburger-icon span:first-child{
     opacity: 1;
 }
 
-.hamburger-icon span:last-child{
+.hamburger-icon span:first-child{
     transform: none;
 }
 
-/* section  */
+/* sections  */
 
 section{
     padding-top: 4vh;
@@ -159,6 +161,8 @@ section{
 .section-container{
     display: flex;
 }
+
+/* profile section  */
 
 #profile{
     display: flex;
@@ -178,7 +182,7 @@ section{
     border-radius: 50%;
 }
 
-.section-text{
+.section_text{
     align-self: center;
     text-align: center;
 }
@@ -201,7 +205,7 @@ section{
     text-align: center;
 }
 
-#social-container{
+#socials-container{
     display: flex;
     justify-content: center;
     margin-top: 1rem;
@@ -209,10 +213,11 @@ section{
 }
 
 /* icons  */
+
 .icon{
     cursor: pointer;
     height: 2rem;
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
 }
 
 /* buttons */
@@ -241,6 +246,10 @@ section{
 .btn-color-1, .btn-color-2:hover{
     background: rgb(53, 53, 53);
     color: white;
+}
+
+.btn-color-1:hover{
+    background: rgb(0, 0, 0);
 }
 
 .btn-color-2{
@@ -387,6 +396,7 @@ article .icon{
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
     margin: 2rem auto;
     padding: 0.5rem;
 }
@@ -407,7 +417,7 @@ article .icon{
     cursor: default;
 }
 
-.mail-icon{
+.email-icon{
     height: 2.5rem;
 }
 
