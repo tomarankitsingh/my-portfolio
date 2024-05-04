@@ -138,14 +138,7 @@ a:hover {
 
 .hamburger-icon span:first-child {
     transform: none;
-}
-
-.hamburger-icon span:first-child {
     opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-    transform: none;
 }
 
 /* sections  */
@@ -217,7 +210,6 @@ section {
 .icon {
     cursor: pointer;
     height: 2rem;
-    /* margin-top: 0.5rem; */
 }
 
 .profile-icon {
@@ -252,24 +244,12 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-    background: rgb(53, 53, 53);
-    color: white;
+    background: #dbdbdb;
 }
 
 .btn-color-1:hover {
-    background: rgb(0, 0, 0);
-}
+    background: white;
 
-.btn-color-2 {
-    background: none;
-}
-
-.btn-color-2:hover {
-    border: rgb(255, 255, 255) 0.1rem solid;
-}
-
-.btn-container {
-    gap: 1rem;
 }
 
 /* about section */
@@ -306,7 +286,7 @@ section {
 .details-container {
     padding: 1.5rem;
     flex: 1;
-    background: white;
+    background: #dbdbdb;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
@@ -318,10 +298,8 @@ section {
     height: 80%;
 }
 
-.section_pic-container {
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
+.text-container p{
+    text-align: justify;
 }
 
 /* education section  */
@@ -343,33 +321,18 @@ section {
     flex-direction: column;
 }
 
-/* .article-container{
+.article-container{
     display: flex;
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
-    justify-content: space-around;
-} */
-
-.article-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-flow: dense;
-    text-align: initial;
-    gap: 2.5rem;
-    margin-left: 50px;
-}
-
-/* above container and this one are removable if we want display: flex  */
-.article-container:nth-child(3) {
-    grid-column: 1;
+    justify-content: space-between;
 }
 
 article {
     display: flex;
     width: 10rem;
-    /* justify-content: space-around; */
     gap: 1.5rem;
 }
 
@@ -407,7 +370,6 @@ article .icon {
 }
 
 .color-container {
-    border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
 }
 
@@ -419,72 +381,55 @@ article .icon {
 
 .project-title {
     margin: 1rem;
-    color: black;
 }
 
 .project-btn {
-    color: black;
     border-color: rgb(163, 163, 163);
 }
 
 /* contact  */
 
 #contact {
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 70vh; */
     position: relative;
 }
 
-/* .contact-info-upper-container {
+.contact-container{
     display: flex;
+    justify-content: baseline;
+    align-items: center;
+    height: 60vh;
+    padding-left: 1rem;
+}
+
+.contact-info-upper-container {
+    flex-basis: 30%;
+    display: flex; 
     justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: column;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
-    margin: 2rem auto;
-    padding: 0.5rem;
-} */
+    border: rgb(163, 163, 163) 0.1rem solid;
+    padding: 1rem;
+    background: #dbdbdb;
+}
 
 .contact-info-container {
     display: flex;
     align-items: start;
-    /* justify-content: start; */
+    justify-content: center;
     gap: 0.5rem;
-    margin: 1rem;
-}
-
-.contact-info-container p {
-    font-size: larger;
+    margin: 0.75rem;
 }
 
 .contact-icon {
     cursor: default;
 }
 
-.email-icon {
-    height: 2.5rem;
-}
-
-/* footer  */
-footer {
-    height: 26vh;
-    margin: 0 1rem;
-}
-
-footer p {
-    text-align: center;
-}
-
-.contact-info-upper-container{
-    flex-basis: 35%;
-    align-self: baseline;
-}
-
 .contact-form{
     flex-basis: 60%;
+    margin: 2rem;
+    
 }
 
 .contact-form form{
@@ -493,22 +438,30 @@ footer p {
 
 form input, form textarea{
     width: 100%;
-    border: 0;
+    border: rgb(163, 163, 163) 0.1rem solid;
     outline: none;
     background: #dbdbdb;
     padding: 15px;
     margin: 15px 0;
     font-size: 1rem;
-    border-radius: 6px;
-}
-
-.contact-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 1rem;
 }
 
 #msg{
     color: #149414;
     display: block;
 }
+
+/* footer  */
+
+footer {
+    padding: 20px;
+}
+
+footer nav{
+    height: 10vh; 
+} 
+
+footer p {
+    text-align: center;
+} 
