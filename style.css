@@ -429,11 +429,11 @@ article .icon {
 .contact-form{
     flex-basis: 60%;
     margin: 2rem;
-    
 }
 
 .contact-form form{
     width: 100%;
+    
 }
 
 form input, form textarea{
