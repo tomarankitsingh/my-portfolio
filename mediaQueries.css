@@ -61,6 +61,7 @@
     }
     .contact-form {
         width: 75%;
+        margin: 0 auto;
     }
     form input, form textarea {
         width: 75%;
@@ -138,6 +139,7 @@
     }
     .contact-form {
         width: 100%;
+        margin: 0 auto;
     }
     form input, form textarea {
         width: 100%;
