@@ -1,44 +1,57 @@
 @media screen and (max-width: 1400px) {
-    #profile{
+    #profile {
         height: 83vh;
         margin-bottom: 6rem;
     }
-    .about-containers{
+
+    .about-containers {
         flex-wrap: wrap;
     }
-    #contact, #projects{
+
+    #projects {
         height: fit-content;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    #desktop-nav{
+    #desktop-nav {
         display: none;
     }
-    #hamburger-nav{
+
+    #hamburger-nav {
         display: flex;
     }
-    #education, .education-details-container{
+
+    #education,
+    .education-details-container {
         margin-top: 2rem;
     }
-    #profile, .section-container{
+
+    #profile,
+    .section-container {
         display: block;
     }
-    .arrow{
+
+    .arrow {
         display: none;
     }
-    section, .section-container{
+
+    section,
+    .section-container {
         height: fit-content;
     }
-    section{
+
+    section {
         margin: 0 5%;
     }
-    .section_pic-container{
+
+    .section_pic-container {
         width: 275px;
         height: 275px;
         margin: 0 auto 2rem;
     }
-    .about-containers{
+
+    .about-containers {
         margin-top: 0;
     }
 
@@ -46,9 +59,11 @@
     .project-container {
         flex-direction: row;
     }
+
     .project-container {
         width: 50%;
     }
+
     .project-img {
         width: 75%;
         height: auto;
@@ -59,96 +74,148 @@
     .contact-info-container {
         flex-direction: row;
     }
+
     .contact-form {
         width: 75%;
         margin: 0 auto;
     }
-    form input, form textarea {
+
+    form input,
+    form textarea {
         width: 75%;
     }
 }
 
 @media screen and (max-width: 600px) {
-    #contact, footer{
-        height: 40vh;
-    }
-    #profile{
+    #profile {
         height: 83vh;
         margin-bottom: 0;
     }
-    article{
+
+    article {
         font-size: 1rem;
     }
-    footer nav{
-        height: fit-content;
-        margin-bottom: 2rem;
-    }
-    .about-containers, .contact-info-upper-container, .btn-container{
+
+    .about-containers,
+    .btn-container {
         flex-wrap: wrap;
     }
-    .contact-info-container{
-        margin: 0;
-    }
-    .contact-info-container p, .nav-links li a{
+
+    .nav-links li a {
         font-size: 1rem;
     }
-    .nav-links li a{
-        font-size: 1rem;
-    }
-    .education-sub-title{
+
+    .education-sub-title {
         font-size: 1.25rem;
     }
-    .logo{
+
+    .logo {
         font-size: 1.5rem;
     }
-    .nav-links{
+
+    .nav-links {
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
     }
-    .section_pic-container{
+
+    .section_pic-container {
         width: auto;
         height: 46vw;
         justify-content: center;
-
     }
-    .section_text_p2{
+
+    .section_text_p2 {
         font-size: 1.25rem;
     }
-    .title{
+
+    .title {
         font-size: 2rem;
     }
-    .text-container{
+
+    .text-container {
         text-align: justify;
     }
-    
+
 
     .project-container-parent,
     .project-container {
         flex-direction: column;
     }
+
     .project-container {
         width: 100%;
     }
+
     .project-img {
         width: 100%;
         height: auto;
     }
 
-    .contact-container,
-    .contact-info-upper-container,
-    .contact-info-container {
-        flex-direction: column;
+
+    #contact {
+        position: static;
     }
+
+    .contact-container {
+        flex-direction: column;
+        height: auto;
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+
+    .contact-info-upper-container {
+        flex-basis: 100%;
+    }
+
+    .contact-info-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .contact-info-container img,
+    .contact-info-container p {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .contact-info-container p {
+        font-size: 0.9rem;
+    }
+
+    .contact-info-container img {
+        height: 1.5rem;
+    }
+
     .contact-form {
+        flex-basis: 100%;
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    .contact-form form {
         width: 100%;
         margin: 0 auto;
-        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    form input, form textarea {
-        width: 100%;
+
+    form input,
+    form textarea {
+        width: 90%;
     }
+
+    .btn {
+        align-self: center;
+    }
+
     footer nav {
-        margin-top: 20px;
+        height: auto;
+        margin-bottom: 1rem;
     }
 }
